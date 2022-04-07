@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+android:layout_marginTop="5dp"
+    tools:context=".ui.dashboard.DashboardActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_launcher_background"
+
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width = "wrap_content"
+
+        android:layout_below="@+id/imageView"
+        android:layout_height = "wrap_content"
+        android:text = "Hello Jay!"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id = "@+id/nameTextView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/photoView"
+        android:layout_below="@+id/nameTextView"
+        android:src="@drawable/ic_launcher_background"
+
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+       android:layout_below="@+id/photoView"
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donor Id"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/mytextview1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/donoridtext"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/RelativeLayout01"
+        android:id="@+id/RelativeLayout02"
+android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Group"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/mytextview3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/donoridbloodgroup"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/RelativeLayout02"
+        android:id="@+id/RelativeLayout03"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Blood Donations"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/mytextview5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/mytextview6"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/RelativeLayout03"
+        android:id="@+id/RelativeLayout04"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Blood Donation Date:"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/mytextview7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 Feb 21"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/mytextview8"/>
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+android:layout_below="@+id/RelativeLayout04"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:singleLine="false"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:padding="15dp"
+        android:text="We appreciate your support,
+Thank you for donating blood.
+You have played a very important
+role in our mission to save lives"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+        <ProgressBar
+            android:id="@+id/pb_loading_dashboard"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+</RelativeLayout>
